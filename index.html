@@ -9,6 +9,8 @@
         <script>
             const maxValue = 3;
             const notPossibleChoice = "this choice is not possible";
+            let humanScore = 0;
+            let computerScore = 0;
             function getComputerChoice(maxValue) {
                 let compChoice = Math.floor(Math.random() * maxValue) 
                 if (compChoice == 0) {
