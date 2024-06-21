@@ -7,7 +7,18 @@
     
     <body>
         <script>
-            console.log("Hello World!")
+            const maxValue = 3;
+            function getComputerChoice(maxValue) {
+                let choice = Math.floor(Math.random() * maxValue) 
+                if (choice == 0) {
+                    return "rock";
+                } else if (choice == 1) {
+                    return "paper";
+                } else if (choice == 2) {
+                    return "scissors";
+                }
+            }
+            console.log(getComputerChoice(maxValue))
         </script>
     </body>
 </html>
